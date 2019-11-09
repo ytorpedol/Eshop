@@ -1,0 +1,71 @@
+﻿.content_frame
+{
+	border: thin solid #EEEEEE;
+	width: 760px;
+	margin-bottom: 40px;
+	float: left;
+	height:auto ;
+}
+.datalist_item
+{
+	width: 760px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #D0EAFF;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #D0EAFF;
+	background-color: #FAFFFF;
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 20px;
+	height: 60px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float :left ;
+}
+.datalist_item_row
+{
+	width: 750px;
+	height: 25px;
+	padding: 10px 0 0 10px;
+	float : left;
+}
+.form_row
+{
+	padding: 10px 0px 10px 0px;
+	width: 500px;
+	clear: both;
+}
+
+.leftlabel
+{
+	padding: 4px 15px 0px 0px;
+	width: 100px;
+	font-size: 12px;
+	color: #333333;
+	text-align: right;
+	float: left;
+}
+.rightInput
+{
+	border: 1px solid #DFDFDF;
+	width: 200px;
+	height: 18px;
+	float: left;
+}
+.item_picture
+{
+	width: 120px;
+	float: left;
+	height: 200px;
+	padding-top :20px;
+}
+.item_score
+{
+	width: 600px;
+
+	float: left;
+}
+
+

@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="myhome.master.cs" Inherits="EShop.myhome.myhome" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>无标题页</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+       <link rel="stylesheet" type="text/css" href="Stylesheet1.css" />
+    <link rel="stylesheet" type="text/css" href="Stylemyhome.css" />
+
+    <script type="text/javascript" src="boxOver.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            color: #000000;
+            font-family: 黑体;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="main_container">
+        <div class="top_bar">
+        </div>
+        <div class="header ">
+            <div class="logo">
+                <img alt="" src="../image/logo.jpg" style="width: 171px; height: 73px" />
+            </div>
+            <div class="search_text">
+                <input type="text" class="search_input" name="search" value="&#35831;&#36755;&#20837;&#20851;&#38190;&#23383;" />
+                <input type="image" src="../image/search.gif" class="search_bt" />
+            </div>
+            <div class="header_class">
+                <div class="header_img ">
+                    <img alt="推荐商品" src="../image/top_hot.gif" />
+                </div>
+                <div class="header_img ">
+                    <img alt="新品速递" src="../image/top_news.gif" />
+                </div>
+                <div class="header_img ">
+                    <img alt="热销排行" src="../image/top_commend.gif" />
+                </div>
+            </div>
+        </div>
+        <div class="menu_bar">
+            <div class="left_menu_corner ">
+            </div>
+            <ul class="menu">
+                <li><a href="../index.aspx" class="nav1">Home </a></li>
+                <li class="divider"></li>
+                <li><a href="../productbrief.aspx" class="nav2">Products</a></li>
+                <li class="divider"></li>
+                <li><a href="../special.aspx" class="nav3">Specials</a></li>
+                <li class="divider"></li>
+                <li><a href="../myorder.aspx" class="nav4">My account</a></li>
+                <li class="divider"></li>
+                <li><a href="../login.aspx " class="nav5">Sign Up</a></li>
+                <li class="divider"></li>
+                <li><a href="../login.aspx " class="nav3">Sign In</a></li>
+                <li class="divider"></li>
+                <li><a href="../contact.html" class="nav6">Contact Us</a></li>
+                <li class="divider"></li>
+            </ul>
+            <div class="right_menu_corner">
+            </div>
+        </div>
+        <div class="crumb_navigation">
+        </div>
+        <div class="main_content">
+            <div class="left_content ">
+                <div class="title_box">
+                    <span class="style1">我的常用链接</span>
+                </div>
+                <div class="title_box">
+                    <span class="style1">帐户管理</span>
+                </div>
+                <div class="border_box">
+                    <ul class="Manage_Menu ">
+                        <li><a href="profile.aspx" target="main">基本资料</a></li>
+                        <li><a href="myaddress.aspx" target="main">收货地址</a></li>
+                        <li><a href="mymessage.aspx" target="main">站内消息</a></li>
+                        <li><a href="memberpoints.aspx" target="main">我的积分</a></li>
+                    </ul>
+                </div>
+                <div class="title_box">
+                    <span class="style1">订单中心</span>
+                </div>
+                <div class="border_box">
+                    <ul class="Manage_Menu ">
+                        <li><a href="myallorder.aspx" target="_self">我的订单</a></li>
+                        <li><a href="custwishlist.aspx" target="main">支付历史</a></li>
+                    </ul>
+                </div>
+                <div class="title_box">
+                    <span class="style1">我的商品</span>
+                </div>
+                <div class="border_box">
+                    <ul class="Manage_Menu ">
+                        <li><a href="boughtlist.aspx" target="main">已购商品</a></li>
+                        <li><a href="custwishlist.aspx" target="main">我的收藏</a></li>
+                    </ul>
+                </div>
+                <div class="title_box">
+                    <span class="style1">留言管理</span>
+                </div>
+                <div class="border_box">
+                    <ul class="Manage_Menu ">
+                        <li><a href="message.aspx" target="main">发表的留言</a></li>
+                        <li><a href="replymessage.aspx" target="main">回复的留言</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="center_content">
+                <div class="center_title_bar">
+                    <div class="center_title_left">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div class="center_title_right">
+                    </div>
+                </div>
+                <div style="float: left; width: 760px">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="left_footer">
+            </div>
+            <div class="center_footer">
+                Template name. All Rights Reserved 2012<br />
+            </div>
+            <div class="right_footer">
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
